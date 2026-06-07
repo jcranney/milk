@@ -176,7 +176,7 @@ project(lib_${LIBNAME}_project)
 # Library can be compiled from multiple source files
 # Convention: the main souce file is named <libname>.c
 #
-add_library(${LIBNAME} SHARED ${SOURCEFILES})
+add_library(${LIBNAME} ${SOURCEFILES})
 
 find_package(PkgConfig REQUIRED)
 pkg_check_modules(CFITSIO cfitsio)

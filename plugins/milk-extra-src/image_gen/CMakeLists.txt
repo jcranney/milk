@@ -37,7 +37,7 @@ project(lib_${LIBNAME}_project)
 # Library can be compiled from multiple source files
 # Convention: the main souce file is named <libname>.c
 #
-add_library(${LIBNAME} SHARED ${SRCNAME}.c ${SOURCEFILES})
+add_library(${LIBNAME} ${SRCNAME}.c ${SOURCEFILES})
 
 target_include_directories(${LIBNAME} PUBLIC $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/..>
 											$<INSTALL_INTERFACE:include>

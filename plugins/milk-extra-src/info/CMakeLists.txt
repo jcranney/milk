@@ -57,7 +57,7 @@ include_directories ("${PROJECT_SOURCE_DIR}/..")
 # Library can be compiled from multiple source files
 # Convention: the main souce file is named <libname>.c
 #
-add_library(${LIBNAME} SHARED ${SOURCEFILES})
+add_library(${LIBNAME} ${SOURCEFILES})
 
 target_include_directories(${LIBNAME} PUBLIC
 	$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/..>
