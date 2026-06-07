@@ -48,7 +48,7 @@ message(" SRCNAME = ${SRCNAME}")
 
 project(lib_${LIBNAME}_project)
 
-add_library(${LIBNAME} SHARED ${SRCNAME}.c ${SOURCEFILES})
+add_library(${LIBNAME}${SRCNAME}.c ${SOURCEFILES})
 
 find_package(PkgConfig REQUIRED)
 pkg_check_modules(CFITSIO cfitsio)

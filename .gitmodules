@@ -1,4 +1,4 @@
 [submodule "src/ImageStreamIO"]
 	path = src/ImageStreamIO
-	url = https://github.com/milk-org/ImageStreamIO.git
+	url = https://github.com/jcranney/ImageStreamIO.git
 	branch = dev
